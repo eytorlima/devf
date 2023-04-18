@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+</head>
+<header>
+    <h1>Pizzaria</h1>
+    <ul>
+        <li><a href="../index.html">Cardápio</a></li>
+        <li><a href="Pedidos.html">Pedidos</a></li>
+    </ul>
+</header>
+<body>
+    <main>
+        <h3>Pedido</h3>
+        <form method="get">
+
+            Nome:
+            <input type="text" name="nome" placeholder="Informe o nome" title="Insira o nome do solicitante" size="30" maxlength="30" required="" autofocus="" />
+            <br /><br />
+
+            Telefone: DDD
+            (<input type="text" name="ddd" placeholder="DDD" title="Insira o DDD do número de telefone" size="2" maxlength="2" />)
+            Número:
+            <input type="text" name="numero" placeholder="Telefone" title="Insira o telefone do solicitante" size="10" maxlength="10" />
+            <br /><br />
+
+            Endereço: <br />
+            <textarea name="endereço" rows="2" cols="80" placeholder="Insira o Endereço do solicitante."></textarea>
+            <br /><br />
+            
+            <table border>
+                <caption>Pizzas</caption>
+                <tr>
+                    <th rowspan="2"><img src="../Imagens/pizza.png" alt="Pizza" title="Pizza"></th>
+                    <th>Sabor</th>
+                    <th>Tamanho</th>
+                    <th>Quantidade</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="sabor" required>
+                            <option value="" selected disabled>Escolha...</option>
+                            <option value="calabresa">Calabresa</option>
+                            <option value="mussarela">Mussarela</option>
+                            <option value="portuguesa">Portuguesa</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="radio" name="tamanho" value="peq" />Pequena
+                        <input type="radio" name="tamanho" value="med" />Média
+                        <input type="radio" name="tamanho" value="gra" />Grande
+                    </td>
+                    <th>
+                        <input type="number" name="qtd" size="5" min="1" max="5" />
+                    </th>
+                </tr>
+            </table>
+
+            <br />
+
+            <table border>
+                <caption>Pagamento - Cartão de Crédito</caption>
+                <tr>
+                    <th>Número/Código:</th>
+                    <th><input type="text" size="16" maxlength="16" /> / <input type="password" size="3" maxlength="3" /></th>
+                </tr>
+                <tr>
+                    <th>Bandeira:</th>
+                    <td>
+                        <input type="radio" name="bandeira" value="visa" /><img src="../Imagens/visa.gif" alt="Bandeira Visa" title="Bandeira Visa" />
+                        <input type="radio" name="bandeira" value="amex" /><img src="../Imagens/amex.gif" alt="Bandeira American Express" title="Bandeira American Express" />
+                        <input type="radio" name="bandeira" value="master" /><img src="../Imagens/master.gif" alt="Bandeira MasterCard" title="Bandeira MasterCard" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Parcelar?</th>
+                    <td><input type="checkbox" name="parcelamento" value="sim" /> Sim </td>
+                </tr>
+            </table>
+        
+            <br />
+        
+            <input type="submit" value="Enviar Pedido"/> <input type="reset" value="Limpar Pedido" />
+        </form>
+    </main>
+
+</body>
+</html>
