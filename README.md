@@ -1,6 +1,6 @@
 
 ## Desenvolvimento front end ## 
-📙 Acervo de arquivos .html desenvolvidos em aula (Desenvolvimento Front end - HTML5 e CSS3).
+📙 Este repositório serve de acervo para os arquivos .html desenvolvidos em aula (Desenvolvimento Front end - HTML5 e CSS3).
 
 ##
 
