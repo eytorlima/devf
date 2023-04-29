@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: tan;
+    color: darkgoldenrod;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    color: sienna;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    padding: 12px;
+    background-color: lightyellow;
+    border: 3px double burlywood;
+    flex-wrap: wrap;
+}
+
+.foto {
+    width: 40%;
+}
+
+.assunto {
+    color: sienna;
+    width: 80%;
+}
+
+.texto {
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-wrap: nowrap;
+    }
+    
+    .foto {
+        width: 5%;
+    }
+    
+    .assunto {
+        width: 25%;
+    }
+    
+    .texto {
+        width: 70%;
+    }
+}
