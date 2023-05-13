@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+   top: 0; 
+   width: 100%;
+   position: fixed;
+   background-color: rgba(1, 7, 7, 85%);
+   z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: silver;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.fundo1 {
+    background-image: url("../imgs/bg01.jpg");
+}
+
+.fundo2 {
+    background-image: url("../imgs/bg02.jpg");
+}
+
+.fundo3 {
+    background-image: url("../imgs/bg03.jpg");
+}
+
+.fundo1, .fundo2, .fundo3 {
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.destaque {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    color: silver;
+    background-color: rgba(1, 7, 7, 85%);
+    padding: 10px;
+    width: 40%;
+    font-size: 1rem;
+    filter: drop-shadow(4px 4px silver);
+    margin: auto;
+}
+
+.conteudo {
+    color: dimgray;
+    background-color: whitesmoke;
+    padding: 90px 25px;
+}
+
+.texto {
+    text-align: justify;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: dimgray;
+}
+
+.clipe {
+    width: 90%;
+    border: 5px ridge silver;
+}
+
+.quadro_animado {
+    width: 320px;
+    height: 180px;
+    margin: auto;
+    background-size: cover;
+    border-radius: 5%;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-name: muda_imagem;
+}
+
+@keyframes muda_imagem {
+    0%  {background-image: url("../imgs/Foto01.jpg");}
+    20% {background-image: url("../imgs/Foto02.jpg");}
+    40% {background-image: url("../imgs/Foto03.jpg");}
+    60% {background-image: url("../imgs/Foto04.jpg");}
+    80% {background-image: url("../imgs/Foto05.jpg");}
+    100% {background-image: url("../imgs/Foto01.jpg");}
+}
+
+footer {
+    color: silver;
+    background-color: black;
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    
+    nav {
+        padding: 20px 0px;
+    }
+
+    ul {
+        padding: 5px;
+    }
+
+    li {
+        width: 25%;
+        float: left;
+    }
+
+    li:hover {
+        transform: rotate(-5deg);
+    }
+
+    a {
+        font-size: 1.25rem;
+    }
+
+    .destaque {
+        padding: 10px;
+        font-size: 2rem;
+        width: 25%;
+        transition-duration: 1s;
+    }
+
+    .destaque:hover {
+        width: 40%;
+    }
+
+    .conteudo {
+        padding: 120px;
+    }
+
+    .clipe {
+        width: 50%;
+    }
+
+    .quadro_animado {
+        width: 640px;
+        height: 360px;
+    }
+   }
