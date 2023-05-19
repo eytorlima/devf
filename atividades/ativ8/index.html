@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="src/imgs/art.png" type="image/x-icon">
+    <title>Exposições de Arte</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#ag">Agenda</a></li>
+            <li><a href="#ing">Ingressos</a></li>
+            <li><a href="#con">Contato</a></li>
+        </ul>
+        <h1>Exposições de Arte</h1>
+    </header>
+
+    <main>
+        <h2>Galeria</h2>
+        <div class="container">
+            <img class="galeria" src="src/imgs/Arte01.jpg" alt="Arte">
+            <img class="galeria" src="src/imgs/Arte02.jpg" alt="Arte">
+            <img class="galeria" src="src/imgs/Arte03.jpg" alt="Arte">
+            <img class="galeria" src="src/imgs/Arte04.jpg" alt="Arte">
+            <img class="galeria" src="src/imgs/Arte05.jpg" alt="Arte">
+            <img class="galeria" src="src/imgs/Arte06.jpg" alt="Arte">
+            <img class="galeria" src="src/imgs/Arte07.jpg" alt="Arte">
+            <img class="galeria" src="src/imgs/Arte08.jpg" alt="Arte">
+        </div>
+        
+        <h2 id="ag">Agenda</h2>
+        <div class="container">
+            <div class="item_agenda">
+                <img src="src/imgs/rj.jpg" alt="Rio de Janeiro">
+                <h3>Rio de Janeiro</h3>
+                <h4>Maio/2020</h4>
+                <p>Quadros e Esculturas</p>
+            </div>
+            <div class="item_agenda">
+                <img src="src/imgs/sp.jpg" alt="São Paulo">
+                <h3>São Paulo</h3>
+                <h4>Junho/2020</h4>
+                <p>Fotografias</p>
+            </div>
+            <div class="item_agenda">
+                <img src="src/imgs/pr.jpg" alt="Curitiba">
+                <h3>Curitiba</h3>
+                <h4>Julho/2020</h4>
+                <p>Pinturas e Desenhos</p>
+            </div>
+        </div>
+
+        <h2 id="ing">Ingressos</h2>
+        <form method="get">
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" maxlength="12" required>
+
+            <label for="qtf">Quantidade</label>
+            <input type="number" id="qtd" name="qtd" min="1" max="20" required>
+
+            <input type="submit" class="botao" value="Solicitar">
+        </form>
+
+        <h2 id="con">Contato</h2>
+        <form method="get">
+            <p>Deixe seus dados e entraremos em contato:</p>
+            <input type="text" id="nome" name="nome" maxlength="38" placeholder="Nome" required>
+            <input type="text" id="email" name="email" maxlength="38" placeholder="E-mail" required>
+            <input type="text" id="fone" name="fone" maxlength="17" placeholder="Telefone" required>
+
+            <input type="submit" class="botao" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>
