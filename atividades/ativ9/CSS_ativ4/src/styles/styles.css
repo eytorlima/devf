@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rowdies', cursive;
+    text-align: center;
+    color: whitesmoke;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    top: 0;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    color: goldenrod;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: blur(5px);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+ul {
+  list-style-type: none;  
+  margin: 0;
+  padding: 0;
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+h1 {
+    width: 70%;
+    font-size: 2rem;
+}
+
+main {
+    position: absolute;
+    padding-top: 100px;
+    background-image: radial-gradient(circle, black, midnightblue);
+}
+
+#lu, #so, #pl {
+    padding-top: 100px;
+}
+
+div.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 30px auto;
+    box-sizing: border-box;
+}
+
+.def {
+    padding: 30px;
+    color: white;
+    border-radius: 10px;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-name: troca_cor;
+}
+
+@keyframes troca_cor {
+    0% {background-color: midnightblue;}
+    25% {background-color: steelblue;}
+    50% {background-color: blue;}
+    75% {background-color: steelblue;}
+    100% {background-color: midnightblue;}
+}
+
+
+.container img{
+    border-radius: 10px;
+}
+
+.texto {
+    color: black;
+    background-color: whitesmoke;
+    border: solid;
+    border-width: 50px;
+    border-image-source: url("../imgs/Borda.png");
+    border-image-slice: 10%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.ceu {
+    background-image: url("../imgs/ceu.jpg");
+    padding: 20px;
+    margin: 50px auto 100px auto;
+    border-radius: 10px;
+}
+
+.planeta {
+    width: 60%;
+    margin: 30px;
+}
+
+.nome {
+    color: navy;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+@media (min-width: 768px){
+    nav {
+        height: 50px;
+    }
+
+    ul {
+        width: 48%;
+    }
+
+    li {
+        width: 25%;
+    }
+
+    h1 {
+        width: 25%;
+        font-size: 2.5rem;
+    }
+
+    main {
+        padding-top: 50px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    a {
+        font-size: 1.25rem;
+    }
+
+    .container {
+        width: 60%;
+    }
+
+    .ceu {
+        width: 80%;
+        height: 220px;
+        margin: 100px auto 400px auto;
+    }
+
+    .texto, .def {
+        width: 60%;
+    }
+
+    .foto {
+        width: 40%;
+        margin-bottom: 200px;
+    }
+
+    .planeta {
+        width: 10%;
+        margin: 0;
+    }
+
+    .nome {
+        visibility: hidden;
+    }
+
+    .planeta:hover .nome{
+        visibility: visible;
+    }
+}
